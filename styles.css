@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #121212;
+    min-height: 100vh;
+    padding: 20px;
+    color: #E0E0E0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #E0E0E0;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(90deg, #BB86FC, #9C7FD9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Grid Container Yapısı - Desktop */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Kart Yapısı */
+.card {
+    background: #1E1E1E;
+    border: 1px solid rgba(187, 134, 252, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(187, 134, 252, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+    aspect-ratio: 300/250;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 0;
+    flex-grow: 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    color: #E0E0E0;
+    font-weight: 600;
+}
+
+/* Kart Hover Efekti */
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(187, 134, 252, 0.25), 0 0 30px rgba(187, 134, 252, 0.15);
+    border-color: rgba(187, 134, 252, 0.4);
+}
+
+.card:hover .card-img {
+    filter: brightness(1.15) saturate(1.3);
+}
+
+.card:hover .card-title {
+    color: #BB86FC;
+}
+
+/* Özel Boyutlu Kart (Büyük Kart) */
+.card-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.card-large .card-img {
+    aspect-ratio: 500/400;
+}
+
+.card-large .card-title {
+    font-size: 1.8rem;
+}
+
+/* Özel Kartlar - Featured Badge */
+.card-featured .card-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(187, 134, 252, 0.1), rgba(156, 127, 217, 0.05));
+    pointer-events: none;
+}
+
+.badge {
+    background: linear-gradient(135deg, #BB86FC, #9C7FD9);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(187, 134, 252, 0.3);
+}
+
+.card-featured {
+    position: relative;
+}
+
+.card-featured .card-content {
+    background: radial-gradient(circle at center, rgba(187, 134, 252, 0.1), transparent);
+    position: relative;
+}
+
+/* Özel Kartlar - Special Icon */
+.card-special {
+    position: relative;
+}
+
+.card-special::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #BB86FC, #9C7FD9);
+    border-radius: 50%;
+    opacity: 0.2;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.card-special:hover::before {
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+}
+
+.special-icon {
+    font-size: 2.5rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ==================== RESPONSIVE TASARIM ==================== */
+
+/* TABLET (768px - 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .card-large {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .card-large .card-img {
+        height: 250px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-large .card-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* MOBİL (640px ve altı) */
+@media screen and (max-width: 640px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .card-img {
+        height: 150px;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    /* Büyük kart mobilde daha az vurgulanır */
+    .card-large {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .card-large .card-img {
+        height: 150px;
+    }
+
+    .card-large .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* KÜÇÜK MOBİL (480px ve altı) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 8px;
+    }
+
+    .card {
+        border-radius: 8px;
+    }
+
+    .card-img {
+        height: 120px;
+    }
+
+    .card-content {
+        padding: 12px;
+    }
+
+    .card-title {
+        font-size: 0.95rem;
+    }
+
+    .card:hover {
+        transform: translateY(-5px) scale(1.01);
+    }
+}
