@@ -6,7 +6,7 @@
 
 ## 🔗 Site Linki
 
-**Canlı Demo:** [Linkinizi buraya yapıştırınız]
+https://veyse1.github.io/Web-Project-6/
 
 ---
 
