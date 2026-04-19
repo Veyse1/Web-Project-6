@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #1a1d22;
+    padding: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: rgba(232, 220, 200, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(232, 220, 200, 0.1);
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(232, 220, 200, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(126, 200, 227, 0.2), inset 0 1px 0 rgba(232, 220, 200, 0.2), 0 0 30px rgba(126, 200, 227, 0.15);
+    background-color: rgba(232, 220, 200, 0.15);
+    border-color: rgba(126, 200, 227, 0.3);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    image-rendering: crisp-edges;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    color: #e8e8e8;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #c9c9c9;
+    line-height: 1.5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    margin: 8px 0 0 0;
+}
+
+/* Büyük Kart Sorumluluğu */
+.card-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.card-large .card-img {
+    height: 400px;
+}
+
+/* Footer Stileri */
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(232, 220, 200, 0.1);
+    background-color: rgba(232, 220, 200, 0.05);
+    backdrop-filter: blur(10px);
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #999999;
+    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Responsive Tasarım - Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 16px;
+    }
+
+    .card-large {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .card-large .card-img {
+        height: 200px;
+    }
+}
+
+/* Responsive Tasarım - Mobil (640px ve altı) */
+@media (max-width: 640px) {
+    body {
+        padding: 12px;
+    }
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-img {
+        height: 180px;
+    }
+
+    .card-content {
+        padding: 12px;
+    }
+
+    .card-title {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .card-text {
+        font-size: 13px;
+    }
+}
+
+/* Modal Stileri */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgba(26, 29, 34, 0.95);
+    border: 1px solid rgba(232, 220, 200, 0.15);
+    border-radius: 12px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(232, 220, 200, 0.1);
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.modal-close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: #c9c9c9;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+    color: #e8e8e8;
+    animation: spin 0.6s ease-in-out;
+}
+
+.modal-image {
+    width: 100%;
+    max-height: 60vh;
+    object-fit: contain;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(232, 220, 200, 0.1);
+}
+
+.modal-info {
+    padding: 30px;
+}
+
+.modal-title {
+    font-size: 28px;
+    color: #e8e8e8;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modal-description {
+    font-size: 15px;
+    color: #c9c9c9;
+    line-height: 1.8;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+/* Modal Responsive */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 95vw;
+        max-height: 95vh;
+        margin: 0 20px;
+    }
+
+    .modal-image {
+        max-height: 50vh;
+    }
+
+    .modal-info {
+        padding: 20px;
+    }
+
+    .modal-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .modal-description {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .modal-close {
+        font-size: 28px;
+        right: 15px;
+        top: 10px;
+    }
+}

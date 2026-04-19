@@ -4,299 +4,285 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Resim Galerisi</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='goldGrad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23ffd700;stop-opacity:1' /><stop offset='100%' style='stop-color:%23ffed4e;stop-opacity:1' /></linearGradient><linearGradient id='blueGrad' x1='0%' y1='100%' x2='100%' y2='0%'><stop offset='0%' style='stop-color:%230a8cff;stop-opacity:1' /><stop offset='100%' style='stop-color:%231ac8ff;stop-opacity:1' /></linearGradient></defs><circle cx='50' cy='50' r='48' fill='url(%23blueGrad)' opacity='0.2'/><circle cx='50' cy='50' r='42' fill='none' stroke='url(%23goldGrad)' stroke-width='2.5'/><polygon points='50,18 65,35 82,32 68,44 75,61 58,50 50,68 42,50 25,61 32,44 18,32 35,35' fill='url(%23goldGrad)'/><circle cx='50' cy='50' r='12' fill='%230a8cff' opacity='0.8'/><circle cx='50' cy='50' r='8' fill='%23ffed4e'/></svg>">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Responsive Resim Galerisi</h1>
-        
-        <div class="gallery-grid">
-            <!-- Büyük Kart -->
-            <div class="card card-large card-featured">
-                <img class="card-img" src="https://picsum.photos/500/400?random=1" alt="Majestik Manzaralar">
-                <div class="card-content">
-                    <div class="badge">✨ FEATURED</div>
-                </div>
-            </div>
+    <header style="text-align: center; padding: 40px 0; border-bottom: 2px solid rgba(232, 220, 200, 0.1); background-color: rgba(232, 220, 200, 0.04);">
+        <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #e8e8e8; font-size: 2.5em; margin: 0 20px; font-weight: 700;">
+            Runeterra Manzaraları: Bir Web Galerisi
+        </h1>
+        <p style="color: #c9c9c9; font-style: italic; margin: 10px 0 0 0; font-size: 1.1em;">League of Legends Dünyasından Estetik Kesitler</p>
+    </header>
 
-            <!-- Standart Kartlar -->
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=2" alt="Işık ve Ton">
-                <div class="card-content">
-                </div>
-            </div>
+    <div class="gallery-container" id="gallery">
+        <!-- Kartlar JavaScript tarafından oluşturulacak -->
+    </div>
 
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=3" alt="Doğa Dokuları">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=4" alt="Su Öğeleri">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=5" alt="Renk Semfonyası">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=6" alt="Gece Sahneleri">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=7" alt="Mevsimsel Geçiş">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=8" alt="İnsan İzleri">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=9" alt="Sanat Kaynakları">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=10" alt="Detay ve Yakınlık">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=11" alt="Geometrik Formlar">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=12" alt="Hız ve Dinamizm">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=13" alt="Vahşi Dünya">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=14" alt="İç Mekan Tasarımı">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=15" alt="Enerji ve Coşku">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=16" alt="Mavi Tonlar">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=17" alt="Yapıların İhtişamı">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=18" alt="Duyusal Tecrübe">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=19" alt="Gökyüzü Sahneleri">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=20" alt="Derinlikler">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=21" alt="Küresel Güzellikleri">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=22" alt="Yeşil Hayat">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=23" alt="Soyut Dünyalar">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=24" alt="İnsan Kapasitesi">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card card-special">
-                <img class="card-img" src="https://picsum.photos/300/250?random=25" alt="Zamanın İzleri">
-                <div class="card-content">
-                    <div class="special-icon">🎨</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=26" alt="Kültürel Zenginlik">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=27" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=28" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=29" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=30" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=31" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=32" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=33" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=34" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=35" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=36" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=37" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=38" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=39" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=40" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=41" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=42" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=43" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=44" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=45" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=46" alt="">
-                <div class="card-content">
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="card-img" src="https://picsum.photos/300/250?random=47" alt="">
-                <div class="card-content">
-                </div>
+    <!-- Modal Popup -->
+    <div id="modal" class="modal" onclick="closeModalOnBg(event)">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" class="modal-image" src="" alt="">
+            <div class="modal-info">
+                <h2 id="modalTitle" class="modal-title"></h2>
+                <p id="modalDescription" class="modal-description"></p>
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <p class="footer-text">⚠️ Bu proje eğitim amaçlı hazırlanmıştır. Kullanılan görsellerin tüm hakları Riot Games'e aittir. Riot Games'in fikri mülkiyet politikasına uygun olarak kullanılmıştır.</p>
+    </footer>
+
+    <script>
+        // Galeri Verileri
+        const galleryData = [
+            {
+                title: "Buzdoğan Mahzenleri",
+                description: "Ayazboynuz Zirvesi'nin metrelerce altında, buzun asla erimediği kadim bir sessizlik hüküm sürüyor. Buzdoğan Mahzenleri, Freljord'un unutulmuş sırlarını ve Buzdoğanların kadim gücünü barındıran derin dehlizlerdir. Burası, sadece soğuğa hükmedenlerin adım atabileceği, kristalize olmuş bir tarihin mezarlığıdır.",
+                image: "resimler/Ayazboynuz Zirvesi'nin altındaki Buzdoğan Mahzenleri.jpg",
+                large: true,
+                showDescription: true
+            },
+            {
+                title: "Bilgewater Körfezi",
+                description: "Barut kokusunun tuzlu melteme karıştığı Bilgewater Körfezi, dünyanın dört bir yanından gelen servet avcılarını, azılı korsanları ve derinliklerin dehşetini aynı tehlikeli sularda buluşturan, adaletin sadece namlunun ucunda olduğu bir kaos limanıdır.",
+                image: "resimler/BILGEWATER KÖRFEZİ.jpg"
+            },
+            {
+                title: "Buhru Tapınağı",
+                description: "Bilgewater'ın vahşi dalgaları arasından yükselen Buhru Tapınağı, Hareketin Tanrıçası Nagakabouros'un kadim gücünü sarsılmaz taşlarında taşıyan ve yaşamın ebedi döngüsünü devasa dokunaçların gölgesinde kutsayan görkemli bir inanç kalesidir.",
+                image: "resimler/BUHRU TAPINAĞI.jpg"
+            },
+            {
+                title: "Bütün Halinde Bir Yaşam",
+                description: "Ionia'nın kadim ormanlarında kök salan Bütün Halinde Bir Yaşam, her nefesin toprağın şarkısına karıştığı ve doğanın vahşi ruhuyla ruhani dengenin tek bir kusursuz döngüde birleştiği o kutsal varoluş biçimidir.",
+                image: "resimler/Bütün Halinde Bir Yaşam.jpg"
+            },
+            {
+                title: "Büyük Manastırlar",
+                description: "Ionia'nın kutsal zirvelerinde yankılanan Büyük Manastırlar, ruhlar alemiyle kurulan kadim bağı dengeleyen bilgeleri ve gökyüzüyle toprağın harmonisini korumaya yeminli dövüş ustalarını barındıran sarsılmaz birer maneviyat kalesidir.",
+                image: "resimler/BÜYÜK MANASTIRLAR.jpg"
+            },
+            {
+                title: "Demacia Kuş Bakışı",
+                description: "Uçsuz bucaksız yeşil vadilerin ortasında bir elmas gibi parlayan Demacia, devasa petrisit surları ve gökyüzüne uzanan bembeyaz kuleleriyle, düzenin ve sarsılmaz bir adaletin yeryüzündeki görkemli yansımasıdır.",
+                image: "resimler/Demacia Kuş Bakışı.jpg"
+            },
+            {
+                title: "Uçurumun Gözleri",
+                description: "Freljord'un dondurucu derinliklerinde, Sonsuz Uçurum'un altındaki buzullara hapsolmuş olan Uçurumun Gözleri, Gözcüler'in dünyayı yutmaya hazır karanlık iradesini ve gerçekliği sona erdirecek o kadim, mor dehşeti ebedi bir sessizlikle izlemektedir.",
+                image: "resimler/EYES IN THE ABYSS.jpg"
+            },
+            {
+                title: "Gök Mahzen",
+                description: "Targon'un bulutlarla çevrili zirvelerinde, kadim takımyıldızların ışığıyla mühürlenmiş olan Gök Mahzen, evrenin başlangıcından beri korunan kozmik sırları ve gerçekliğin dokusunu değiştirebilecek güçteki göksel yadigârları derinliklerinde saklar.",
+                image: "resimler/Gök Mahzen.jpg"
+            },
+            {
+                title: "Güneş Kursu",
+                description: "Shurima'nın kavurucu çöllerinin üzerinde gökyüzüne meydan okuyan Güneş Kursu, ilahi ışığın kudretiyle ölümlüleri Yükselmiş savaşçılara dönüştüren ve altın imparatorluğun ebedi görkemini tüm dünyaya haykıran sarsılmaz bir mucizedir.",
+                image: "resimler/Güneş Kursu.jpg"
+            },
+            {
+                title: "Hareket Halinde Bir Kabile",
+                description: "Dondurucu rüzgarların ve acımasız buzulların ortasında, yünlü mamutların sırtında hayata tutunan bu Freljord kabilesi, altlarındaki toprağı titreterek Pençe'nin hiddeti ile Avarosa'nın umudu arasında ebedi bir göçebe kaderine yürüyor.",
+                image: "resimler/HAREKET HALİNDEKİ BİR KABİLE.jpg"
+            },
+            {
+                title: "Havalandırma Garı",
+                description: "Zaun'un zehirli dumanlarını devasa çarklarıyla yaran Havalandırma Garı, hemen altındaki Işıldayan Bar'ın titrek neonlarına açılan tekinsiz bir geçit olarak Yeraltı Şehri'nin dışlanmış ruhlarına ev sahipliği yapıyor.",
+                image: "resimler/Hemen altında yer alan Işıldayan Bar'ın da girişi olan Havalandırma Garı.jpg"
+            },
+            {
+                title: "Demacia Büyük Meydan",
+                description: "Bembeyaz petrisit taşlarının ve geçmişin görkemli kahramanlarını onurlandıran heykellerin gölgesinde uzanan Demacia Büyük Meydan, krallığın sarsılmaz adaletini ve nizamın ebedi ışığını yansıtan kusursuz bir kalptir.",
+                image: "resimler/Hükümdarların halkın tezahüratları ile göreve getirildiği DEMACIA şehrindeki Büyük Meydan.jpg"
+            },
+            {
+                title: "Icathia'nın Düşüşü",
+                description: "Shurima'nın boyunduruğundan kurtulmak için Hiçlik'in dehşetini dünyaya çağıran Icathia, açtığı o karanlık yarıkta kendi sonunu hazırlayarak tarihin tozlu sayfalarına mor bir felaket olarak kazındı.",
+                image: "resimler/ICATHIA'NIN DÜŞÜŞÜ.jpg"
+            },
+            {
+                title: "Işık Kütüphanesi",
+                description: "Demacia'nın vakur sütunları arasında yükselen Işık Kütüphanesi, krallığın görkemli tarihini ve mermer duvarlar ardına gizlenmiş yasaklı bilgileri, adaletin sönmeyen ışığıyla muhafaza eden ebedi bir bilgelik mabedidir.",
+                image: "resimler/Işık Kütüphanesi.jpg"
+            },
+            {
+                title: "Kasap Köprüsü",
+                description: "Bilgewater'ın paslı zincirleri ve devasa canavar iskeletleri arasında yükselen Kasap Köprüsü, barut kokulu rüzgârların ve geçmişin kanlı hesaplaşmalarının yankılandığı o ebedi ve kanunsuz geçittir.",
+                image: "resimler/Kasap Köprüsü.jpg"
+            },
+            {
+                title: "Katliam Limanı",
+                description: "Bilgewater'ın kanla yıkanmış sularında, devasa deniz canavarlarının leşleri ve paslı kancalar arasında yükselen Katliam Limanı, derinliklerin dehşetini karaya taşıyan ve her köşesinde vahşetin kokusunun sindiği karanlık bir ticaret merkezidir.",
+                image: "resimler/Katliam Limanı.jpg"
+            },
+            {
+                title: "Kemerli Yol",
+                description: "Dağların içinden geçen en eski patikalarda, parıldayan metalden yapılmış kadim geçitler bulunur. En büyükleri, Rakkorların her bir göç döneminin bitişini temsil eder. Rakkorlar güneşin aydınlık yolunda ilerlemeye devam etmeden önce, bu eşikleri geçtikleri anı kutlar.",
+                image: "resimler/KEMERLİ YOL.jpg"
+            },
+            {
+                title: "Krater",
+                description: "Bir zamanlar insanlık tarihinin en nadide hazinelerine ev sahipliği yapan bu devasa galeri, Mahvoluş'un kalbinde açılan karanlık bir krater olarak artık sadece Gölge Adalar'ın lanetli sisini ve unutulmuş geçmişin enkazını derinliklerinde saklıyor.",
+                image: "resimler/Krater.jpg"
+            },
+            {
+                title: "Maryakazık Ziyaret Alanı",
+                description: "Bilgewater'ın paslı kancaları ve tuzlu rüzgarları arasında yükselen Maryakazık Ziyaret Alanı, derinliklerin kadim tanrılarına sunulan adakların ve sulara gömülen ruhların ebedi sessizliğinin yankılandığı karanlık bir sığınaktır.",
+                image: "resimler/Maryakazık ziyaret alanı.jpg"
+            },
+            {
+                title: "Nashramae Güneş Kursu",
+                description: "Shurima'nın ticaret başkentinde yükselen Nashramae Güneş Kursu, kadim imparatorluğun altın mirasını çöllerin ötesine taşıyan ve güneşin kutsal ışığını ticaretin kalbiyle buluşturan sarsılmaz bir görkem abidesidir.",
+                image: "resimler/Nashramae sokakları üzerinde yeniden yükselen Güneş Kursu.jpg"
+            },
+            {
+                title: "Navori Placidium",
+                description: "Ionia'nın ruhuyla sarmalanmış Navori Placidium, gökyüzünde süzülen adaları ve çiçek açan maneviyatıyla, toprağın şarkısını korumak için ayağa kalkan sarsılmaz bir direnişin ebedi kalesidir.",
+                image: "resimler/NAVORI'DE YER ALAN PLACIDIUM.jpg"
+            },
+            {
+                title: "Tekmaturji Koleji",
+                description: "Gelişim Şehri'nin kalbinde çarkların ve sihrin kusursuz bir uyumla çarpıştığı Tekmaturji Koleji, sınırları zorlayan hextech icatlarıyla Runeterra'nın geleceğini baştan yazacak dâhilerini bekliyor.",
+                image: "resimler/PILTOVER'A doğru yükselen Tekmaturji Koleji binası.jpg"
+            },
+            {
+                title: "Ekliptik Kasa",
+                description: "Gelişim Şehri'nin en aşılmaz hextech mühürleriyle donatılmış olan Ekliptik Kasa, Piltover'ın devasa servetini ve gün yüzüne çıkmaması gereken kozmik gizemlerini, demir yumruklu bir disiplinle muhafaza ediyor.",
+                image: "resimler/PILTOVER'IN en iyi korunan bankası Ekliptik Kasa.jpg"
+            },
+            {
+                title: "Rakkora'nın Evi",
+                description: "Güneşin kavurucu sıcaklığıyla kutsanmış Targon yamaçlarında yükselen bu yerleşke, hayatlarını savaşın onuruna ve gökyüzünün ihtişamına adamış olan Rakkor savaşçılarının sarsılmaz ocağıdır.",
+                image: "resimler/RAKKORLARIN EVİ.jpg"
+            },
+            {
+                title: "Targon Dağı",
+                description: "Gök kubbenin yeryüzüne değdiği bu heybetli zirve, fanilerin ilahi bir güçle ödüllendirildiği veya kozmik bir sessizliğe gömüldüğü, Runeterra'nın en yüksek ve en gizemli geçididir.",
+                image: "resimler/Targon Dağı.jpg"
+            },
+            {
+                title: "Draklorn",
+                description: "Freljord'un dondurucu karanlığında Lissandra'ya sadakatle hizmet eden bu kadim muhafızlar, ayazın ve kara buzun gücüyle yoğrulmuş, sarsılmaz bir iradenin gölgelerdeki yansımasıdır.",
+                image: "resimler/THE DRAKLORN.jpg"
+            },
+            {
+                title: "Yırtık Vadi",
+                description: "Targon'un sarp yamaçlarında gökyüzü ile yeryüzünün çarpıştığı bu yarık, kozmik enerjilerin toprağı şekillendirdiği ve tırmanışın imkansızla dans ettiği kadim bir geçittir.",
+                image: "resimler/Yırtık Vadi.jpg"
+            },
+            {
+                title: "Zindelo'nun Runeterra'sı",
+                description: "Efsanevi kâşif ve haritacı Zindelo'nun gözünden betimlenen bu görseller, Runeterra'nın bilinmeyen köşelerini ve saklı kalmış doğa harikalarını eşsiz bir perspektifle gözler önüne seriyor.",
+                image: "resimler/ZINDELO'NUN Bilinmeyen Runeterra'sı.jpg"
+            },
+            {
+                title: "Zoantha Çağlayanı",
+                description: "Devasa çiçeklerin arasından süzülen suların ruhani bir enerjiyle aktığı Zoantha Çağlayanı, Ionia'nın yaşam dolu ve büyüleyici vahşi güzelliğini temsil eden eşsiz bir manzara sunar.",
+                image: "resimler/ZOANTHA ÇAĞLAYANI.jpg"
+            },
+            {
+                title: "Ölümsüz Hisar",
+                description: "Noxus'un kalbinde yükselen Ölümsüz Hisar, kadim bir karanlığın külleri üzerine inşa edilmiş, fatihlerin kanıyla mühürlenmiş ve sarsılmaz iradenin çelikten anıtı haline gelmiş bir devasa kaledir.",
+                image: "resimler/Ölümsüz Hisar.jpg"
+            },
+            {
+                title: "İliknişan Pazarı",
+                description: "Ionia'nın ruhani dokusuyla örülü İliknişan Pazarı, fani dünyanın ticaretini büyüyle harmanlayan ve her köşesinde kadim bir geleneğin yankılandığı rengârenk bir yaşam merkezidir.",
+                image: "resimler/İliknişan Pazarı.jpg"
+            },
+            {
+                title: "İlk Diyar",
+                description: "Büyü ve gerçekliğin arasındaki perdenin en ince olduğu İlk Diyar, doğanın vahşi ruhlarla dans ettiği ve her bir yaprağın kadim bir dengeyi fısıldadığı Ionia'nın mistik anavatanıdır.",
+                image: "resimler/İlk Diyar.jpg"
+            },
+            {
+                title: "İssız İllet Mahzenleri",
+                description: "Eskiden kutsal bir bilgi hazinesiyken şimdi kara sisle boğulmuş olan bu mahzenler, unutulmuş dehşetlerin ve huzursuz ruhların ebedi sessizliğe hapsolduğu karanlık bir labirenttir.",
+                image: "resimler/ıssız İllet Mahzenleri.jpg"
+            },
+            {
+                title: "Şafakhisarı - Jarvan III'ün Sarayı",
+                description: "Görkemli beyaz mermerleri ve göğe yükselen kuleleriyle Şafakhisarı, Demacia'nın sarsılmaz adaletini temsil eden ve Jarvan III'ün mirasını koruyan, sadakatin taştan bir zırha bürünmüş halidir.",
+                image: "resimler/Şafakhisarı, Jarvan III ün Sarayı.jpg"
+            },
+            {
+                title: "Şarkı Vadisi",
+                description: "Rüzgarın kayalarla dans ederek şarkılar söylediği bu vadi, Ionia'nın doğasıyla müziğin birleştiği mistik bir sığınaktır.",
+                image: "resimler/ŞARKI VADİSİ.jpg"
+            }
+        ];
+
+        // Galeriye kartları dinamik olarak ekle
+        function initGallery() {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            
+            galleryData.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'card' + (item.large ? ' card-large' : '');
+                card.onclick = () => openModal(item);
+                card.style.cursor = 'pointer';
+                
+                let cardHTML = `
+                    <img class="card-img" src="${item.image}" alt="${item.title}">
+                    <div class="card-content">
+                        <h3 class="card-title">${item.title}</h3>
+                `;
+                
+                if (item.showDescription) {
+                    cardHTML += `<p class="card-text">${item.description}</p>`;
+                }
+                
+                cardHTML += `</div>`;
+                
+                card.innerHTML = cardHTML;
+                
+                gallery.appendChild(card);
+            });
+        }
+
+        // Modal Aç
+        function openModal(item) {
+            const modal = document.getElementById('modal');
+            document.getElementById('modalImage').src = item.image;
+            document.getElementById('modalTitle').textContent = item.title;
+            document.getElementById('modalDescription').textContent = item.description;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Sayfanın kaymını engelle
+        }
+
+        // Modal Kapat
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Modal arka planına tıklandığında kapat
+        function closeModalOnBg(event) {
+            if (event.target.id === 'modal') {
+                closeModal();
+            }
+        }
+
+        // ESC tuşu ile kapatma
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Sayfa yüklendiğinde galeriye başla
+        window.addEventListener('load', initGallery);
+    </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+ 
