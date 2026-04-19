@@ -2,8 +2,9 @@
 
 League of Legends dünyasından estetik kesitleri gösteren modern ve responsive bir web galerisi uygulaması.
 
-
 https://veyse1.github.io/Resim-Galerisi--devi/
+
+
 ---
 
 
@@ -95,11 +96,9 @@ Resim Galerisi V2/
 | JavaScript (Vanilla) | ES6+ | Dinamik işlevsellik |
 | Grid/Flexbox | - | Layout sistemi |
 
-**Kütüphane Yok** ✓ - Tamamen vanilla JavaScript kullanıyor
 
 ---
 
-## 🚀 Kurulum
 
 ### Gereksinimler
 - Herhangi bir web tarayıcı (Chrome, Firefox, Safari, Edge)
@@ -282,20 +281,9 @@ Kartlarda iç gölge efekti
 
 ## 📝 Telif Hakkı
 
+
 ⚠️ **Bu proje eğitim amaçlı hazırlanmıştır.**
 
-Kullanılan görsellerin tüm hakları **Riot Games**'e aittir. Bu proje Riot Games'in fikri mülkiyet politikasına uygun olarak hazırlanmıştır.
-
-```
-© 2026 Eğitim Projesi
-© Riot Games - Tüm görseller
-```
-
----
-
-## 📧 İletişim ve Katkılar
-
-Bu proje eğitim amaçlı bir öğrenci projesidir. Katkılar ve öneriler memnuniyetle karşılanır!
 
 ---
 
@@ -308,6 +296,3 @@ Bu proje eğitim amaçlı bir öğrenci projesidir. Katkılar ve öneriler memnu
 
 ---
 
-**Son Güncelleme:** 11 Nisan 2026
-**Versiyon:** 1.0
-**Durum:** ✅ Tamamlandı
