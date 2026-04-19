@@ -2,7 +2,7 @@
 
 League of Legends dünyasından estetik kesitleri gösteren modern ve responsive bir web galerisi uygulaması.
 
-https://veyse1.github.io/Resim-Galerisi--devi/
+https://veyse1.github.io/Web-Project-6/
 
 
 ---
